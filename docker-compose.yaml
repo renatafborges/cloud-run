@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  tempsystem:
+    build: .
+    container_name: tempsystem
+    ports:
+      - 8080:8080
+
+  systests:
+    build: ./tests
+    container_name: systests
+    depends_on:
+      - tempsystem
+    environment:
+      - URL_TEMP=tempsystem

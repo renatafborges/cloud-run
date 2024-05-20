@@ -1,0 +1,9 @@
+GET http://localhost:8080/temperature/58330000 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+####
+GET https://cloudrun-goexpert-qqjgvrgoma-uc.a.run.app HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
